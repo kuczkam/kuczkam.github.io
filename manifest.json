@@ -1,0 +1,17 @@
+{
+    "short_name": "Do.",
+    "name": "Todo List",
+    "icons": [
+      {
+        "src": "/do/img/do-144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+    ],
+    "start_url": "/do/?source=pwa",
+    "background_color": "#6C00BC",
+    "display": "standalone",
+    "scope": "/do/",
+    "theme_color": "#6C00BC",
+    "orientation": "portrait-primary"
+  }

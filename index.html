@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/uwk2kwc.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <title>Do.</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__div-logo">
+          <p class="logo_name">Do<span>.</span></p>
+        </div>
+        <div class="claim">
+          <p>Make a simple to do list and pin date, priority and done labels
+            to organise your work and keep in mind deadlines
+          </p>
+        </div>
+      </div>
+    <div class="main" id="todos">
+      <ul id="js__tasks" class="list"></ul>
+      <div id="task-options">
+        <button class="js__task-add btn"></button>
+        <button class="js__task-edit btn"></button>
+        <button id="js__task-remove" class="js__task-remove btn"></button>
+        <button class="js__task-check btn"></button>
+      </div>
+    </div>
+    <div class="aside hide" id="modal">
+      <div id="js__task-add_div" class="hidden">
+        <div class="task">
+          <p>Do.</p>
+          <input id="js__task-input" class="focus" type="text" placeholder="task" autofocus>
+        </div>
+        <div class="date">
+          <p>Deadline. <span id="js__task-date"></span></p>
+          <div id="datepicker">
+            <div class="cal-navi">
+              <i id="js__prev" class="fas fa-angle-left alignleft"></i>
+              <i id="js__prev-year" class="fas fa-angle-left alignleft"></i>
+              <p id="js__month-year" class="aligncenter"></p>
+              <i id="js__next" class="fas fa-angle-right alignright"></i>
+              <i id="js__next-year" class="fas fa-angle-right alignright hide"></i>
+            </div>
+            <table id="table_calendar">
+              <thead id="js__day-of-week"></thead>
+              <tbody id="js__days"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="add-task__btn">
+          <button id="js__task-add">Save</button>
+          <button id="js__task-add-edit" class="hide">Save</button>
+          <button id="js__task-add-close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script src="script.js"></script>
+  <script src="datepicker.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+}
+body {
+  background: #fff;
+}
+input[type="text"], input[type="date"], textarea, select, button { 
+  outline: none;
+}
+.header{
+  display: inline-block;
+  width: auto;
+  margin: 0 0 0 100px;
+}
+.hide {
+    display: none !important;
+}
+.visible {
+  display: block;
+}
+.logo{
+  height: 43px;
+  padding-top: 0px;
+  padding-right: 20px;
+  float: left;
+}
+.logo_name{
+  font-family: canada-type-gibson,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5em;
+  color: #21D39B;
+  margin: 0;
+}
+p.logo_name span{
+  color: #6C00BC;
+}
+.js__task-add{
+  background-image: url(../img/Do_icon_add_active.svg);
+  background-repeat:no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.js__task-edit{
+  background-image: url(../img/Do_icon_edit.svg);
+  background-repeat:no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.js__task-check{
+  background-image: url(../img/Do_icon_check.svg);
+  background-repeat:no-repeat;
+  width: 100px;
+  height: 100px;
+}
+#js__task-remove{
+  background-image: url(../img/Do_icon_delete.svg);
+  background-repeat:no-repeat;
+  width: 100px;
+  height: 100px;
+}
+button.js__task-edit.active.btn{
+  background-image: url(../img/Do_icon_edit_active.svg);
+  background-repeat:no-repeat;
+  width: 100px;
+  height: 100px;
+}
+button.js__task-check.active.btn{
+  background-image: url(../img/Do_icon_check_active.svg);
+  background-repeat:no-repeat;
+  width: 100px;
+  height: 100px;
+}
+button.js__task-remove.active.btn{
+  background-image: url(../img/Do_icon_delete_active.svg) !important;
+  background-repeat:no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.container{
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 100px;
+}
+.claim{
+  font-size: 2em;
+  font-weight: 300;
+  color: #BFBFBF;
+  width: auto;
+}
+.main {
+  text-align: left;
+  padding-top: 100px;
+}
+button{
+  cursor: pointer;
+  border: 0;
+}
+#js__tasks{
+  list-style-type: none;
+  margin: 0 0 0 100px;
+  padding-left: 0;
+}
+#task-options {
+  padding-top: 100px;
+  margin: 0 0 17% 17%;
+}
+.todo-element{
+  font-weight: 300;
+  color: #000000;
+  padding: 0 0 40px 0;
+}
+.js__to-edit{
+  color: #FF4954 !important;
+}
+.task-date{
+  font-size: 3em;
+  font-weight: 300;
+  padding-top: 10px;
+}
+.todo-element p {
+  margin: 0;
+  word-break: break-word;
+}
+.todo-element__item{
+  font-size: 4em;
+}
+.btn{
+  margin: 0 100px 0 0px;
+  background-color: transparent;
+}
+.aside, .modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+.task{
+  border-radius: 3px 0 0 3px;
+  border: none;
+  background-image: linear-gradient(to right, #10C8B1 , #29D891);
+  height: 155px;
+  padding: 100px 0 0 100px;
+}
+.task p{
+  font-family: canada-type-gibson,sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 4em;
+  margin: 0;
+  width: 105px;
+  float: left;
+}
+.date p{
+  font-family: canada-type-gibson,sans-serif;
+  color: #21D39B;
+  font-weight: 700;
+  font-size: 4em;
+}
+#js__task-date, #js__modal-date{
+  font-family: canada-type-gibson,sans-serif;
+  color: #21D39B;
+  font-weight: 300;
+  margin: 0;
+}
+#js__task-input {
+  height: 70px;
+  width: 80%;
+  padding-left: 50px;
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 4em;
+  caret-color: #000000;
+}
+#js__task-input::placeholder{
+  color: #c3ecdb;
+}
+#js__month-year, .day-of-month {
+  color: #000000;
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0;
+}
+#js__prev, #js__next{
+  color: #DCDCDC;
+  cursor: pointer;
+  font-size: 3em;
+}
+#js__prev-year, #js__next-year{
+  color: #FF4954;
+  cursor: pointer;
+  font-size: 3em;
+}
+.alignleft {
+  float: left;
+  text-align: left;
+  width: 33.66666%;
+  padding-left: 14px;
+}
+.aligncenter {
+  float: left;
+  text-align:center;
+  width: 22.66666%;
+}
+.alignright {
+  float: left;
+  text-align: right;
+  width: 41.66666%;
+}
+#table_calendar {
+  width: 106.4%;
+}
+.cal-navi {
+  padding: 50px 0 120px 20px;
+}
+.day-of-week{
+  color: #DCDCDC;
+  font-weight: 300;
+  font-size: 3em;
+}
+.day-of-month {
+  background: transparent;
+}
+#js__task-add, #js__task-add-close, #js__task-add-edit {
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  background-color: #FF4954;  
+  width: 5em;
+  height: 2em;
+  font-size: 3em;
+  color: #fff;
+}
+.day-of-month:hover{
+  color: #FF4954;
+  font-weight: 700; 
+}
+td {
+  text-align: center;
+  padding-right: 27px;
+}
+.selected{
+  color: #FF4954;
+  font-weight: 700; 
+}
+#js__task-add_div{
+  transition-property: visibility, opacity;
+  transition-duration: 0s, 2s;
+}
+#js__task-add_div.hidden{
+  opacity: 0;
+  visibility: hidden;
+  transition-property: visibility, opacity;
+  transition-duration: 0s, 2s;
+  transition-delay: 0s, 2s;
+}
+#js__task-edit_div.hidden{
+  opacity: 0;
+  visibility: hidden;
+  transition-property: visibility, opacity;
+  transition-duration: 0s, 2s;
+  transition-delay: 0s, 2s;
+}
+#js__task-edit_div{
+  transition-property: visibility, opacity;
+  transition-duration: 0s, 2s;  
+}
+.task_done{
+  color: #BFBFBF !important;
+}
+.add-task__btn {
+  padding: 8% 0px 0px 20%;
+}
+.add-task__btn button {
+  margin-right: 130px;
+}
+.sort{
+  visibility: hidden;
+  display: none;
+}
+#datepicker {
+  margin-left: -32px;
+  padding-right: 100px;
+}
+.date {
+  padding-left: 100px;
+}
